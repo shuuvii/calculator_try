@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  #calculator{
+    display: grid;
+    grid-template-areas: 
+    "display display display display"
+    "clear clear divide multiply"
+    "seven eight nine subtract"
+    "four five six add"
+    "one two three equals"
+    "zero zero decimal equals" ;
+    grid-template-columns: 100px 100px 100px 100px;
+   
+    gap:10px;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #242424;
+    .clearBtn{
+      background-color: #a91515;
+      color: #ffffff;
+    }
+    .operations{
+      background-color: #3be34c;
+    }
+    .numbers{
+      background-color: #565656;
+      color: #ffffff;
+      
+    }
+    button{
+      height:100px;
+      font-size: 24px;
+      border-color: white;
+      border-radius: 40px;
+      transition: transform 0.1s ease-in-out;
+      
+    }
+    button:active{
+      transform: scale(0.98);
+    }
+    #answer{
+      font-size: 40px;
+      height:40px;
+    }
+    #expression{
+      font-size: 30px;
+      height:30px;
+      color:#b4b1b1
+    }
+    #divide{
+      grid-area: divide;
+    }
+    #clear{
+      grid-area: clear;
+    }
+    #multiply{
+      grid-area: multiply;
+    }
+    #add{
+      grid-area: add;
+    }
+    #subtract{
+      grid-area: subtract;
+    }
+    #decimal{
+      grid-area: decimal;
+    }
+    #equals{
+      height: 210px;
+      grid-area: equals;
+    }
+    #one{
+      grid-area:one;
+    }
+    #two{
+      grid-area:two;
+    }
+    #three{
+      grid-area:three;
+    }
+    #four{
+      grid-area:four;
+    }
+    #five{
+      grid-area:five;
+    }
+    #six{
+      grid-area:six;
+    }
+    #seven{
+      grid-area:seven;
+    }
+    #eight{
+      grid-area:eight;
+    }
+    #nine{
+      grid-area:nine;
+    }
+    #zero{
+      grid-area:zero;
+    }
+    #display{
+      grid-area: display;
+      padding:20px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
